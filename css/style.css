@@ -1,0 +1,1769 @@
+/*!
+ * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@100;700;900&display=swap");
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+abbr[data-original-title], abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+ol ol, ol ul, ul ol, ul ul {
+  margin-bottom: 0;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+dt {
+  font-weight: 700;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+blockquote {
+  margin: 0 0 1rem;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+b, strong {
+  font-weight: bolder;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+code, kbd, pre, samp {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 1em;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+figure {
+  margin: 0 0 1rem;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+caption {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+th {
+  text-align: inherit;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+button {
+  border-radius: 0;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+button, input {
+  overflow: visible;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+select {
+  word-wrap: normal;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+input[type=date], input[type=datetime-local], input[type=month], input[type=time] {
+  -webkit-appearance: listbox;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+output {
+  display: inline-block;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+template {
+  display: none;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/libs/_bootstrap-reboot.min.scss */
+[hidden] {
+  display: none !important;
+}
+
+/* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/style.scss */
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* line 14, ../../PORTFOLIOS/main_portfolio/src/sass/style.scss */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 19, ../../PORTFOLIOS/main_portfolio/src/sass/style.scss */
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #FFCC04;
+  margin: 25px auto 0 auto;
+}
+
+@media (max-width: 992px) {
+  /* line 28, ../../PORTFOLIOS/main_portfolio/src/sass/style.scss */
+  .about .divider {
+    position: absolute;
+    left: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 39, ../../PORTFOLIOS/main_portfolio/src/sass/style.scss */
+  .contacts .divider {
+    position: absolute;
+    left: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_button.scss */
+.btn {
+  height: 45px;
+  background: #FFCC04;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 12px 25px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_promo.scss */
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("../../img/main_bg.jpg") no-repeat 50%/cover;
+  padding-top: 205px;
+}
+
+/* line 6, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_promo.scss */
+.promo__title {
+  width: 640px;
+  margin-top: 10px;
+}
+
+/* line 10, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_promo.scss */
+.promo__subtitle {
+  position: relative;
+  padding-left: 10px;
+  z-index: 2;
+}
+
+/* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.promo__subtitle:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #FFCC04;
+}
+
+/* line 16, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_promo.scss */
+.promo__btns {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+/* line 23, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_promo.scss */
+.promo__link {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 135px;
+  text-align: center;
+  padding: 8px 25px;
+}
+
+/* line 30, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_promo.scss */
+.promo__link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+/* line 5, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title_fz14 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 9, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title_fz16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 13, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title_fz20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* line 17, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title_fz36 {
+  font-size: 36px;
+}
+
+/* line 20, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title_fz48 {
+  font-size: 48px;
+}
+
+/* line 23, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title__section-title {
+  position: relative;
+  text-align: center;
+}
+
+/* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.title__section-title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #FFCC04;
+}
+
+/* line 27, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title__section-title:before {
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 33, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_title.scss */
+.title__section-subtitle {
+  text-align: center;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_sidepanel.scss */
+.sidepanel {
+  position: fixed;
+  top: 230px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 340px;
+  z-index: 3;
+  align-items: center;
+}
+
+/* line 11, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_sidepanel.scss */
+.sidepanel__divider {
+  width: 2px;
+  height: 70px;
+  background-color: #000;
+}
+
+/* line 16, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_sidepanel.scss */
+.sidepanel__text {
+  height: 150px;
+  width: 25px;
+}
+
+/* line 19, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_sidepanel.scss */
+.sidepanel__text span {
+  transform: rotate(-90deg) translate(-30%, -260%);
+  display: block;
+  width: 150px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+/* line 11, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #151812;
+}
+
+/* line 17, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.hamburger span.long {
+  width: 36px;
+}
+
+/* line 22, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s;
+  text-transform: lowercase;
+}
+
+/* line 33, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu.active {
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 38, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__block {
+  position: relative;
+  width: 345px;
+  background-color: #FFCC04;
+  height: 100%;
+  padding-top: 140px;
+  padding-left: 40px;
+  transition: all 0.6s;
+  z-index: 10;
+}
+
+/* line 48, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+/* line 54, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__list {
+  list-style-type: none;
+  padding-left: 35px;
+}
+
+/* line 58, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__link {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+/* line 64, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__link:before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 100%;
+  transition: all 0.6s;
+}
+
+/* line 76, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__link:hover:before {
+  background-color: #000000;
+}
+
+/* line 80, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__link a {
+  color: #000000;
+}
+
+/* line 84, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__social {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 94, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_menu.scss */
+.menu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.75;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about {
+  padding-top: 120px;
+}
+
+/* line 3, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 400px 670px;
+  grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+  grid-auto-rows: minmax(245px, auto);
+  column-gap: 70px;
+  row-gap: 40px;
+}
+
+/* line 11, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__photo {
+  grid-row: 1 / 3;
+}
+
+/* line 13, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__photo img {
+  width: 100%;
+}
+
+/* line 17, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__descr {
+  padding-top: 6px;
+}
+
+/* line 19, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__descr .divider {
+  margin: 0;
+}
+
+/* line 23, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__title {
+  position: relative;
+  padding: 1px 0 0 12px;
+}
+
+/* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.about__title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #FFCC04;
+}
+
+/* line 28, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 32, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__text-fz18 {
+  font-size: 18px;
+  line-height: 0px;
+  font-weight: 530;
+  color: #757575;
+}
+
+/* line 39, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__skills {
+  display: grid;
+  grid-template: repeat(2, minmax(115px, auto))/repeat(2, 260px);
+  grid-auto-rows: 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+/* line 45, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__skills-item {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  column-gap: 20px;
+}
+
+/* line 50, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__skills-circle {
+  position: relative;
+  padding: 15px 0 0 15px;
+}
+
+/* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.about__skills-circle:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #FFCC04;
+}
+
+/* line 54, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__skills-circle:before {
+  top: 0;
+}
+
+/* line 58, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_about.scss */
+.about__skills-text {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume {
+  padding-top: 120px;
+}
+
+/* line 3, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__wrapper {
+  padding: 60px 65px 0 65px;
+  display: grid;
+  grid-template-columns: repeat(2, 425px);
+  column-gap: 135px;
+}
+
+/* line 10, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__column-title {
+  position: relative;
+  padding-left: 35px;
+}
+
+/* line 13, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__column-title:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #FFCC04;
+  border-radius: 100%;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 25, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__column ul {
+  list-style-type: none;
+}
+
+/* line 27, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__column ul li {
+  position: relative;
+}
+
+/* line 29, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__column ul li:after {
+  content: '';
+  width: 1px;
+  height: calc(100% + 16px);
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background-color: #000;
+}
+
+/* line 41, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item {
+  position: relative;
+}
+
+/* line 43, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item:before {
+  content: '';
+  height: 1px;
+  width: 45px;
+  position: absolute;
+  top: 68px;
+  background-color: #000;
+}
+
+/* line 51, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item-head {
+  position: relative;
+  padding: 45px 0 0 100px;
+}
+
+/* line 54, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item-head h4 {
+  margin-bottom: 0;
+}
+
+/* line 58, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item-body {
+  padding-left: 43px;
+  margin-top: 12px;
+}
+
+/* line 62, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item-icon {
+  position: absolute;
+  top: 50px;
+  left: 45px;
+}
+
+/* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.resume__item-icon:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #FFCC04;
+}
+
+/* line 67, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item-icon img {
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+
+/* line 73, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item-location {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+/* line 78, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_resume.scss */
+.resume__item-body {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills {
+  padding-top: 120px;
+}
+
+/* line 3, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__items {
+  margin-top: 60px;
+  padding: 0 10px;
+  display: grid;
+  grid-template: repeat(2, minmax(270px, auto))/repeat(4, 270px);
+  grid-auto-rows: minmax(270px, auto);
+  gap: 13px;
+}
+
+/* line 11, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__item {
+  border: 1px solid black;
+  padding: 30px 30px 25px 30px;
+}
+
+/* line 14, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__item-img {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+}
+
+/* line 19, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__item h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* line 23, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__item p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 30, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__ratings {
+  margin-top: 120px;
+  display: grid;
+  grid-template: repeat(2, minmax(70px, auto))/repeat(3, 350px);
+  column-gap: 45px;
+  row-gap: 35px;
+}
+
+/* line 36, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__ratings-item {
+  display: grid;
+  grid-template: minmax(21px, auto) 14px/200px 35px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/* line 42, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__ratings-title {
+  position: relative;
+  padding: 2px 0 0 13px;
+}
+
+/* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.skills__ratings-title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #FFCC04;
+}
+
+/* line 48, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__ratings-counter {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 52, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__ratings-line {
+  width: 350px;
+  height: 14px;
+  background-color: #E8E4DE;
+  border-radius: 4px;
+  grid-column: 1 / 3;
+}
+
+/* line 58, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_skills.scss */
+.skills__ratings-line span {
+  display: block;
+  height: 100%;
+  background-color: #FFCC04;
+  border-radius: 4px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio {
+  padding-top: 120px;
+}
+
+/* line 3, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__wrapper {
+  margin-top: 60px;
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(4, 280px);
+  grid-auto-rows: 280px;
+  gap: 7px;
+}
+
+/* line 9, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__wrapper .vertical {
+  grid-row: 1 / 3;
+  grid-column: 4 / 5;
+}
+
+/* line 13, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__wrapper .horizontal {
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+}
+
+/* line 18, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__box {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+/* line 16, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.portfolio__box:hover {
+  border-color: #FFCC04;
+  box-shadow: 1px 1px 15px grey;
+  transition: all 0.3s;
+}
+
+/* line 25, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__box-img {
+  position: relative;
+  transition: all 0.6s;
+  width: 260px;
+  height: 260px;
+}
+
+/* line 30, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__box-img img {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 37, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__box-img:hover {
+  filter: grayscale(50%);
+}
+
+/* line 41, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__box a {
+  text-decoration: none;
+}
+
+/* line 44, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__box-header {
+  text-align: center;
+  color: #212529;
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+/* line 52, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_portfolio.scss */
+.portfolio__box-content {
+  color: #212529;
+  text-align: center;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_price.scss */
+.price {
+  padding-top: 60px;
+}
+
+/* line 3, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_price.scss */
+.price__wrapper {
+  margin-top: 60px;
+  padding: 0 60px;
+  display: grid;
+  grid-template: repeat(3, minmax(45px, auto))/repeat(2, 365px);
+  grid-auto-rows: minmax(45px, auto);
+  row-gap: 15px;
+  justify-content: space-between;
+}
+
+/* line 12, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_price.scss */
+.price__item {
+  position: relative;
+  display: grid;
+  grid-template: repeat(2, minmax(21px, auto))/repeat(2, auto);
+  row-gap: 5px;
+  padding-left: 25px;
+}
+
+/* line 18, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_price.scss */
+.price__item:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #FFCC04;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+}
+
+/* line 28, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_price.scss */
+.price__type, .price__count {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 33, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_price.scss */
+.price__count {
+  justify-self: end;
+}
+
+/* line 36, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_price.scss */
+.price__descr {
+  grid-column: 1 / 3;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts {
+  padding: 120px 0 90px 0;
+}
+
+/* line 3, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__wrapper {
+  padding: 0 35px 0 52px;
+  display: grid;
+  grid-template-columns: 400px 585px;
+  justify-content: space-between;
+}
+
+/* line 10, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__photo img {
+  width: 100%;
+}
+
+/* line 14, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__descr {
+  padding-top: 6px;
+}
+
+/* line 16, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__descr .divider {
+  margin: 0;
+}
+
+/* line 20, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__title {
+  position: relative;
+  padding: 1px 0 0 12px;
+}
+
+/* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/base/_mixins.scss */
+.contacts__title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #FFCC04;
+}
+
+/* line 25, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__text, .contacts__social {
+  margin-top: 20px;
+}
+
+/* line 28, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__link {
+  margin-right: 25px;
+}
+
+/* line 30, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__link img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/* line 35, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__form {
+  margin-top: 30px;
+  display: grid;
+  grid-template: 45px 190px 45px/repeat(2, 280px);
+  justify-content: space-between;
+  row-gap: 27px;
+}
+
+/* line 41, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__form label {
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  height: 18px;
+  padding: 0 8px;
+  background-color: #fff;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+/* line 53, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__triggers {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 35px;
+}
+
+/* line 59, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__policy {
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 64, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__policy input {
+  margin-right: 10px;
+}
+
+/* line 68, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__input {
+  position: relative;
+}
+
+/* line 70, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__input input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+/* line 77, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__textarea {
+  position: relative;
+  grid-column: 1 / 3;
+}
+
+/* line 80, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__textarea textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 20px;
+  font-size: 12px;
+}
+
+/* line 88, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_contacts.scss */
+.contacts__btn {
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 1, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_pageup.scss */
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 8, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_pageup.scss */
+.pageup img {
+  width: 100%;
+}
+
+@media (max-width: 1439px) {
+  /* line 2, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .sidepanel {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 7, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .container {
+    max-width: 960px;
+  }
+  /* line 11, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__wrapper {
+    grid-template-columns: 400px 520px;
+    column-gap: 40px;
+  }
+  /* line 15, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__skills {
+    column-gap: 20px;
+    grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+  }
+  /* line 18, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__skills-item {
+    grid-template-columns: 40px 195px;
+    column-gap: 15px;
+  }
+  /* line 25, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .resume__wrapper {
+    padding: 40px 20px 0 20px;
+    column-gap: 80px;
+  }
+  /* line 31, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__items {
+    grid-template-columns: repeat(auto-fit, 270px);
+    justify-content: space-between;
+  }
+  /* line 35, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-auto-rows: minmax(70px, auto);
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  /* line 43, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .portfolio__wrapper {
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-auto-rows: 280px;
+    justify-content: space-around;
+    row-gap: 35px;
+  }
+  /* line 48, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .portfolio__wrapper .horizonal, .portfolio__wrapper .vertical {
+    grid-row: unset;
+    grid-column: unset;
+  }
+  /* line 55, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__wrapper {
+    padding: 0;
+    grid-template-columns: 400px 520px;
+  }
+  /* line 59, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 250px);
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 66, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .container {
+    max-width: 720px;
+  }
+  /* line 70, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .title_fz48 {
+    display: block;
+    font-size: 38px;
+  }
+  /* line 76, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .title_fz36 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 26px;
+  }
+  /* line 82, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .divider {
+    margin: 15px auto 0 auto;
+  }
+  /* line 86, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__wrapper {
+    grid-template-columns: 300px 380px;
+  }
+  /* line 89, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__skills {
+    grid-template-columns: 380px;
+    grid-auto-rows: minmax(115px, auto);
+  }
+  /* line 92, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__skills-item {
+    grid-template-columns: 40px 320px;
+    column-gap: 20px;
+  }
+  /* line 99, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .resume__wrapper {
+    column-gap: 60px;
+    grid-template-columns: repeat(2, 320px);
+  }
+  /* line 105, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__items {
+    padding: 0 20px;
+  }
+  /* line 108, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: space-between;
+    padding: 0;
+    column-gap: 0;
+  }
+  /* line 113, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__ratings-line {
+    width: 100%;
+  }
+  /* line 119, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .price__wrapper {
+    grid-template-columns: repeat(auto-fit, 350px);
+    padding: 0;
+  }
+  /* line 125, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__wrapper {
+    grid-template-columns: 300px 400px;
+  }
+  /* line 128, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 195px);
+  }
+  /* line 131, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__btn {
+    padding: 8px 25px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 139, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .container {
+    max-width: 540px;
+  }
+  /* line 143, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .title_fz48 {
+    font-size: 28px;
+  }
+  /* line 148, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo__title {
+    line-height: 39px;
+    width: 300px;
+  }
+  /* line 153, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about {
+    padding-top: 40px;
+  }
+  /* line 155, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about .about__title {
+    text-align: center;
+  }
+  /* line 157, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about .about__title:before {
+    position: absolute;
+    left: 42%;
+  }
+  /* line 162, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__wrapper {
+    grid-template: 400px auto auto / 1fr;
+  }
+  /* line 165, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__photo {
+    grid-row: 2/3;
+  }
+  /* line 168, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__skills {
+    grid-template-columns: repeat(2, 260px);
+  }
+  /* line 170, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__skills-item {
+    grid-template-columns: 40px 200px;
+    column-gap: 20px;
+  }
+  /* line 176, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .resume {
+    padding-top: 40px;
+  }
+  /* line 178, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .resume__wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+  /* line 184, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills {
+    padding-top: 40px;
+  }
+  /* line 186, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__items {
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+  /* line 191, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-auto-rows: minmax(70px, auto);
+    justify-content: center;
+    margin-top: 60px;
+  }
+  /* line 196, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__ratings-line {
+    width: 100%;
+  }
+  /* line 201, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .portfolio {
+    padding-top: 40px;
+  }
+  /* line 203, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .portfolio__wrapper {
+    margin-top: 40px;
+    grid-template: repeat(4, auto)/repeat(1, 280px);
+  }
+  /* line 208, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .price {
+    padding-top: 40px;
+  }
+  /* line 210, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .price__wrapper {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  /* line 215, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts {
+    padding-top: 40px;
+  }
+  /* line 217, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts .contacts__title {
+    text-align: center;
+  }
+  /* line 219, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts .contacts__title:before {
+    position: absolute;
+    left: 42%;
+  }
+  /* line 224, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts .contacts__subtitle {
+    text-align: center;
+  }
+  /* line 227, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__text {
+    text-align: center;
+  }
+  /* line 230, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__social {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 234, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__photo {
+    display: none;
+  }
+  /* line 237, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__wrapper {
+    grid-template-columns: 1fr;
+  }
+  /* line 240, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 250px);
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 247, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  /* line 252, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .title_fz48 {
+    font-size: 26px;
+  }
+  /* line 255, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .title_fz36 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  /* line 260, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .hamburger {
+    right: 20px;
+  }
+  /* line 264, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .menu__block {
+    width: 250px;
+    padding-left: 20px;
+  }
+  /* line 269, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo {
+    background: url("../img/main_bg.jpg") no-repeat 57%/cover;
+  }
+  /* line 271, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo__btns {
+    margin-top: 30px;
+  }
+  /* line 276, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about .title {
+    text-align: center;
+  }
+  /* line 278, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about .title:before {
+    position: absolute;
+    left: 45%;
+    right: -55%;
+  }
+  /* line 285, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__wrapper {
+    grid-template: 340px auto auto / 1fr;
+  }
+  /* line 288, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__skills {
+    grid-template-columns: 1fr;
+  }
+  /* line 293, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .resume__wrapper {
+    padding: 40px 5px 0 5px;
+  }
+  /* line 298, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__items {
+    margin-top: 20px;
+  }
+  /* line 301, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .skills__ratings {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+  /* line 306, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .price__wrapper {
+    grid-template-columns: repeat(auto-fit, 295px);
+  }
+  /* line 310, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts {
+    padding-bottom: 50px;
+  }
+  /* line 312, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__form {
+    grid-template: 45px 45px 190px minmax(45px, auto)/1fr;
+  }
+  /* line 315, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__text {
+    text-align: center;
+  }
+  /* line 318, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__textarea {
+    grid-column: unset;
+    width: 100%;
+  }
+  /* line 322, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__triggers {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    column-gap: unset;
+    row-gap: 20px;
+  }
+  /* line 328, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__btn {
+    order: 2;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  /* line 333, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .contacts__policy {
+    width: 180px;
+    margin: 0 auto;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* line 343, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__descr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 474px) {
+  /* line 351, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__subtitle {
+    font-size: 24px;
+  }
+  /* line 354, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__text-fz18 {
+    font-size: 14px;
+  }
+  /* line 357, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__descr {
+    font-size: 12px;
+  }
+  /* line 362, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo .title_fz48 {
+    font-size: 22px;
+  }
+  /* line 365, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo__title {
+    line-height: 30px;
+    width: 230px;
+  }
+  /* line 369, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo__btns {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 392px) {
+  /* line 379, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo .title_fz48 {
+    font-size: 18px;
+  }
+  /* line 382, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .promo__subtitle {
+    font-size: 14px;
+  }
+  /* line 387, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__text-fz18 {
+    font-size: 13px;
+  }
+  /* line 390, ../../PORTFOLIOS/main_portfolio/src/sass/blocks/_media.scss */
+  .about__descr {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
