@@ -1,0 +1,62 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@100;700;900&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+	 scroll-behavior: smooth;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.divider {
+	width: 60px;
+	height: 3px;
+	background-color: $main-color;
+	margin: 25px auto 0 auto;
+}
+
+@media (max-width: 992px) {
+	.about {
+		.divider {
+			position: absolute;
+			left: 50%;
+   		right: -50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.contacts {
+		.divider {
+			position: absolute;
+			left: 50%;
+   		right: -50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+
+
+@import 'blocks/button';
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price.scss';
+@import 'blocks/contacts';
+@import 'blocks/pageup';
+@import 'blocks/media';
