@@ -344,7 +344,7 @@ template {
 .promo {
   min-height: 100vh;
   position: relative;
-  background: url("../../img/main_bg.jpg") no-repeat 50%/cover;
+  background: url("img/main_bg.jpg") no-repeat 50%/cover;
   padding-top: 205px;
 }
 
@@ -1267,9 +1267,6 @@ template {
   }
   .title_fz48 {
     font-size: 28px;
-  }
-  .promo {
-    background: url("../../img/main_bg.jpg") no-repeat 50%/cover;
   }
   .promo__title {
     line-height: 39px;
