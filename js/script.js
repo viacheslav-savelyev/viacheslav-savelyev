@@ -12,7 +12,7 @@ closeElem.addEventListener('click', () => {
 });
 
 menuLinks.addEventListener('click', () => {
-   menu.classList.remove('active');
+  	menu.classList.remove('active');
 });
 
 const counters = document.querySelectorAll('.skills__ratings-counter'),
