@@ -1,0 +1,21 @@
+@mixin before_circle {
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -25%;
+		left: 0;
+		width: 36px;
+		height: 36px;
+		border-radius: 100%;
+		background: $main-color;
+	}
+}
+
+@mixin hover_yellow {
+	&:hover {
+		border-color: $main-color;
+		box-shadow: 1px 1px 15px grey;
+		transition: all 0.3s;
+	}
+}
