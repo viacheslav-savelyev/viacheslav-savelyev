@@ -5,8 +5,14 @@
 }
 @media (max-width: 1200px) {
 	.container {
-		max-width: 960px;
+		max-width: 920px;
 	}
+   .promo {
+      &__title {
+         font-size: 40px;
+         max-width: 600px;
+      }
+   }
 	.about {
 		&__wrapper {
 			grid-template-columns: 400px 520px;
@@ -42,7 +48,7 @@
 	.portfolio {
 		&__wrapper {
 			grid-template-columns: repeat(auto-fit, 280px);
-			grid-auto-rows: 280px;
+			grid-auto-rows: 380px;
 			justify-content: space-around;
 			row-gap: 35px;
 			.horizonal, .vertical {
@@ -66,6 +72,13 @@
 	.container {
 		max-width: 720px;
 	}
+   .promo {
+      &__title {
+         font-size: 36px;
+         max-width: 400px;
+         line-height: 48px;
+      }
+   }
 	.title {
 		&_fz36 {
 			font-size: 30px;
@@ -147,11 +160,15 @@
 	.about {
 		padding-top: 40px;
 		&__wrapper {
-			grid-template: 400px auto auto / 1fr;
+         grid-template-columns: 1fr;
 		}
 		&__photo {
 			grid-row: unset;
+         width: 100%;
 		}
+   //   &__descr {
+   //      margin-top: 300px;
+   //}
 		&__skills {
 			grid-template-columns: repeat(2, 260px);
 			&-item {
@@ -185,9 +202,7 @@
 			}
 		}
 	}
-	.portfolio {
-		padding-top: 40px;
-	}
+
 	.price {
 		padding-top: 40px;
 		&__wrapper {
@@ -211,8 +226,7 @@
 
 @media (max-width: 576px) {
 	.container {
-		width: 100%;
-		padding: 0 10px;
+      max-width: 420px;
 	}
 	.title {
 		&_fz48 {
@@ -235,13 +249,24 @@
 	.promo {
 		background: url('../img/main_bg.jpg') no-repeat 57%/cover;
 		&__btns {
-			margin-top: 30px;
+			margin-top: 20px;
+         flex-wrap: wrap;
 		}
+      &__title {
+         font-size: 20px;
+         max-width: 240px;
+         line-height: 28px;
+      }
+      &__link {
+         width: 100px;
+      }
 	}
 	.about {
 		&__wrapper {
-			grid-template: 340px auto auto / 1fr;
+			//grid-template: 340px auto auto / 1fr;
+         grid-template-columns: 1fr;
 		}
+      
 		&__skills {
 			grid-template-columns: 1fr;
 		}
@@ -264,6 +289,7 @@
 			grid-template-columns: repeat(auto-fit, 295px);
 		}
 	}
+   
 	.contacts {
 		padding-bottom: 50px;
 		&__form {
@@ -291,9 +317,4 @@
 		}
 	}
    
-   @media (max-width: 576px) {
-      .container{
-         padding: 0 25px;
-      }
-   }
 }
