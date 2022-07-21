@@ -318,3 +318,23 @@
 	}
    
 }
+
+@media (max-width: 376px) {
+   .container {
+      max-width: 320px;
+   }
+   .promo {
+      &__title {
+         width: 220px;
+      }
+   }
+   .contacts {
+      &__email {
+         font-size: 18px;
+      }
+      &__secondtext {
+         font-size: 14px;
+      }
+   }
+
+}
